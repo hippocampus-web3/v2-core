@@ -36,7 +36,7 @@ async function main() {
     user
   )) as IUniswapV3Pool;
 
-  console.log('uniswapV3Pool', uniswapV3Pool.address)
+  console.log("uniswapV3Pool", uniswapV3Pool.address);
 
   const arrakisV2Resolver = (await ethers.getContract(
     "ArrakisV2Resolver"
