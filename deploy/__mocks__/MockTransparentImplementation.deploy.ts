@@ -32,7 +32,7 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
         name: "TempProxyAdmin",
       },
     },
-    log: hre.network.name != "hardhat" ? true : false,
+    log: true,
   });
 };
 

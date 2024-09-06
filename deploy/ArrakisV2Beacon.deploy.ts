@@ -28,13 +28,13 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
     await deploy("ArrakisV2Beacon", {
       from: deployer,
       args: [(await ethers.getContract("ArrakisV2")).address, deployer],
-      log: hre.network.name != "hardhat" ? true : false,
+      log: true,
     });
   else
     await deploy("ArrakisV2Beacon", {
       from: deployer,
       args: [(await ethers.getContract("ArrakisV2")).address, arrakisMultiSig],
-      log: hre.network.name != "hardhat" ? true : false,
+      log: true,
     });
 };
 

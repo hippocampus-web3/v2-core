@@ -24,7 +24,7 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
   const { deployer } = await getNamedAccounts();
   await deploy("Pool", {
     from: deployer,
-    log: hre.network.name != "hardhat" ? true : false,
+    log: true,
   });
 };
 

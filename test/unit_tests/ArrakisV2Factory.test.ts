@@ -400,7 +400,7 @@ describe("Factory function unit test", function () {
         Position: (await ethers.getContract("Position")).address,
         Underlying: (await ethers.getContract("Underlying")).address,
       },
-      log: hre.network.name != "hardhat" ? true : false,
+      log: true,
     });
     const newImplementation: ArrakisV2 = (await ethers.getContractAt(
       "ArrakisV2",
@@ -485,7 +485,7 @@ describe("Factory function unit test", function () {
         Position: (await ethers.getContract("Position")).address,
         Underlying: (await ethers.getContract("Underlying")).address,
       },
-      log: hre.network.name != "hardhat" ? true : false,
+      log: true,
     });
     const newImplementation: ArrakisV2 = (await ethers.getContractAt(
       "ArrakisV2",

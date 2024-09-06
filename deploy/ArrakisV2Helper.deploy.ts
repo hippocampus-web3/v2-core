@@ -33,7 +33,7 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
       Underlying: (await ethers.getContract("Underlying")).address,
       Position: (await ethers.getContract("Position")).address,
     },
-    log: hre.network.name != "hardhat" ? true : false,
+    log: true,
   });
 };
 

@@ -29,7 +29,7 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
     libraries: {
       Position: (await ethers.getContract("Position")).address,
     },
-    log: hre.network.name != "hardhat" ? true : false,
+    log: true,
   });
 };
 

@@ -36,7 +36,7 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
       },
     },
     args: [(await ethers.getContract("ArrakisV2Beacon")).address],
-    log: hre.network.name != "hardhat" ? true : false,
+    log: true,
   });
 };
 
